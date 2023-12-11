@@ -1,1 +1,1 @@
-Remove-Item -Path .\*.json
+Get-ChildItem -Path .\Bicep -Recurse
