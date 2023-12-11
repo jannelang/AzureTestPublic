@@ -13,5 +13,6 @@ jobs:
       steps:
         - uses: actions/checkout@v1
         - name: Test Script
+          working-directory: ./
           run: ./test.ps1
           shell: powershell
