@@ -9,5 +9,5 @@ jobs:
       steps:
         - uses: actions/checkout@v1
         - name: Test Script
-          run: ./test2.ps1
+          run: ./test.ps1
           shell: powershell
