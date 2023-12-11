@@ -1,1 +1,1 @@
-$PSVersionTable
+az bicep version
