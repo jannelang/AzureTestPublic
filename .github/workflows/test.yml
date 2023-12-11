@@ -15,4 +15,3 @@ jobs:
         - name: Test Script
           working-directory: ./!build
           run: ./test.ps1
-          shell: powershell
