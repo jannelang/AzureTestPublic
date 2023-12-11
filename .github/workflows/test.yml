@@ -1,7 +1,7 @@
 name: Windows PowerShell
 on:
     push:
-      branches: [master]
+      branches: [main]
       paths:
           - 'Bicep/*'
     workflow_dispatch:  
