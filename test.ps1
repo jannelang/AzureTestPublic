@@ -1,1 +1,1 @@
-New-Item -Path .\Bicep\armconverted\ -Name "testfile.txt" -ItemType "file"
+Remove-Item -Path .\Bicep\armconverted\*.json -ErrorAction Ignore
