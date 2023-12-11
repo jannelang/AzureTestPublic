@@ -1,1 +1,1 @@
-Remove-Item -Path .\Bicep\armconverted\*.json
+Remove-Item -Path .\Bicep\armconverted\*.json -Force
