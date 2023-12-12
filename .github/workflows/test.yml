@@ -8,7 +8,7 @@ on:
  
 jobs:
  build:
-  name: Test
+  name: Snyk IaC scan
   runs-on: windows-latest
   steps:
    - name: Checkout
