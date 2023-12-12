@@ -9,4 +9,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Delete files
-      run: .\test.ps1
+      run: ./test.ps1
