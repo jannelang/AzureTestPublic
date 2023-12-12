@@ -1,1 +1,1 @@
-az bicep build --file .\Bicep\App\main.bicep
+Get-ChildItem -Path .\Bicep\armconverted -Filter *.json -Recurse
