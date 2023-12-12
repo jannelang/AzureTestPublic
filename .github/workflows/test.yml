@@ -1,4 +1,4 @@
-name: Delete files
+name: Powershell Test
 on:
   workflow_dispatch:
 
