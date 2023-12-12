@@ -1,12 +1,16 @@
 name: Powershell Test
 on:
+  push:
+   branches: [main]
+   paths:
+    - 'Bicep/*'
   workflow_dispatch:
 
 jobs:
- delete-files:
+ build:
   runs-on: windows-latest
   steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Delete files
-      run: ./test.ps1
+   - name: Checkout
+     uses: actions/checkout@v2
+   - name: Delete files
+     run: ./test.ps1
