@@ -3,7 +3,7 @@ on:
  push:
   branches: [main]
   paths:
-   - 'Bicep/**'
+   - 'Bicep/**.bicep'
  workflow_dispatch:
  
 jobs:
