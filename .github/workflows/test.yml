@@ -13,5 +13,5 @@ jobs:
   steps:
    - name: Checkout
      uses: actions/checkout@v2
-   - name: Run Script
+   - name: Compile Bicep to ARM
      run: ./test.ps1
