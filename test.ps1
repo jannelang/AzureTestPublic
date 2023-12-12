@@ -1,1 +1,1 @@
-Remove-Item -Path .\Bicep\armconverted\*.json -Force
+Get-ChildItem -Recurse
