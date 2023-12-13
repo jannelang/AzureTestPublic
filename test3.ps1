@@ -1,1 +1,2 @@
-Remove-Item -Path .\Bicep\armconverted\test.json -ErrorAction Ignore
+$path = Get-ChildItem -Path .\Bicep\armconverted -Filter *.json -Recurse
+Remove-Item $path
