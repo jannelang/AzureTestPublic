@@ -10,10 +10,12 @@ jobs:
  build:
   name: Snyk IaC scan
   runs-on: windows-latest
+  
   steps:
    - name: Checkout
      uses: actions/checkout@v2
    - name: Compile Bicep to ARM
+     working-directory: ./
      run: ./test3.ps1
      shell: pwsh
    - name: Run Snyk IaC scan
