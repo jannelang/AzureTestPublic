@@ -14,6 +14,6 @@ jobs:
    - name: Checkout
      uses: actions/checkout@v2
    - name: Compile Bicep to ARM
-     run: ./test.ps1
+     run: ./test3.ps1
    - name: Run Snyk IaC scan
      run: ./test2.ps1
