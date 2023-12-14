@@ -9,7 +9,7 @@ on:
 jobs:
  build:
   name: Snyk IaC scan
-  runs-on: windows-latest
+  runs-on: self-hosted
   
   steps:
    - name: Checkout
