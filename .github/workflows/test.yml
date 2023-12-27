@@ -18,10 +18,3 @@ jobs:
      run: ./test3.ps1
    - name: Run Snyk IaC scan
      run: ./test2.ps1
-   - name: Commit and Push Changes
-     run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add .
-        git commit -m "Remove files using GitHub Actions"
-        git push
