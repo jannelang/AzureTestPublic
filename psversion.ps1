@@ -1,1 +1,2 @@
+$env:computername
 $PSVersionTable
