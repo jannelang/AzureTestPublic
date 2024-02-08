@@ -1,24 +1,25 @@
 name: Snyk IaC Scan
 on:
-  push:
-    branches: [ main ]
-    paths:
-        - 'Bicep/**.bicep'
+    push:
+        branches:
+            - 'main'
+        paths:
+            - 'Bicep/**.bicep'
 
 jobs:
-  convert-bicep-to-arm-and-scan-with-snyk:
-    runs-on: self-hosted
-    defaults:
-      run:
-        shell: pwsh
+    convert-bicep-to-arm-and-scan-with-snyk:
+        runs-on: [self-hosted, windows]
+        defaults:
+            run:
+                shell: pwsh
 
-    steps:
-    - name: Checkout code
-      id: CheckoutCode
-      uses: actions/checkout@v2
+        steps:
+        - name: Checkout code
+          id: CheckoutCode
+          uses: actions/checkout@v2
 
-    - name: Delete old files
-      id: DeleteOldFiles
-      run: |
-        $env:computername
-        $PSVersionTable
+        - name: Delete old files
+          id: DeleteOldFiles
+          run: |
+            $env:computername
+            $PSVersionTable
