@@ -4,7 +4,7 @@ on:
         branches:
             - 'main'
         paths:
-            - 'Bicep/**.bicep'
+            - 'Bicep/**/*.bicep'
 
 jobs:
     convert-bicep-to-arm-and-scan-with-snyk:
