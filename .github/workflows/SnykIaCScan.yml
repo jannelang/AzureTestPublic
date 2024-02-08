@@ -1,0 +1,23 @@
+name: Snyk IaC Scan
+on:
+  push:
+    branches: [ SIII-33290-Snyk-IaC-scan-to-Severa-Azure-Configurations-GitHub-repository ]
+    paths:
+        - 'Bicep/**.bicep'
+
+jobs:
+  convert-bicep-to-arm-and-scan-with-snyk:
+    runs-on: self-hosted, windows
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+    - name: Checkout code
+      id: CheckoutCode
+      uses: actions/checkout@v2
+
+    - name: Delete old files
+      id: DeleteOldFiles
+      run: |
+        write-host "Testing"
