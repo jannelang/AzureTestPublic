@@ -1,13 +1,13 @@
 name: Snyk IaC Scan
 on:
   push:
-    branches: [ SIII-33290-Snyk-IaC-scan-to-Severa-Azure-Configurations-GitHub-repository ]
+    branches: [ main ]
     paths:
         - 'Bicep/**.bicep'
 
 jobs:
   convert-bicep-to-arm-and-scan-with-snyk:
-    runs-on: self-hosted, windows
+    runs-on: self-hosted
     defaults:
       run:
         shell: pwsh
