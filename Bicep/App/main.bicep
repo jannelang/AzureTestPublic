@@ -1,4 +1,4 @@
-//description
+//description2
 param webAppName string = uniqueString(resourceGroup().id) // Generate unique String for web app name
 param sku string = 'B1' // The SKU of App Service Plan
 param linuxFxVersion string = 'php|7.4' // The runtime stack of web app
