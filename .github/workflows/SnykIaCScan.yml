@@ -20,4 +20,5 @@ jobs:
     - name: Delete old files
       id: DeleteOldFiles
       run: |
-        write-host "Testing"
+        $env:computername
+        $PSVersionTable
